@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+        }
+        #character {
+            width: 300px;
+            transition: transform 0.2s ease-in-out;
+        }
+        #specs-box {
+            border: 2px solid pink;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        body {
+            -webkit-app-region: drag;
+        }
+        #specs-box {
+            -webkit-app-region: no-drag; /* So text box is clickable */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <img id="character" src="moods\anya1.jpeg" alt="Assistant"> -->
+    <img id="character" src="moods\anya1.jpeg"  width="300"">
+    <div id="specs-box">Loading system info...</div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+

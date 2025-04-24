@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-reloader": "^1.2.3"
   }
 }
-
-
