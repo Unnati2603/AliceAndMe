@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    -webkit-app-region: drag;
+}
+
+#character {
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#specs-box {
+    border: 2px solid pink;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    -webkit-app-region: no-drag; /* So text box is clickable */
+}

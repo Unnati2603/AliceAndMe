@@ -9,6 +9,7 @@
     "start": "electron ."
   },
   "devDependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
     "electron-reloader": "^1.2.3"
   }
 }

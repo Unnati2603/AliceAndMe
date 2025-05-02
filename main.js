@@ -5,12 +5,12 @@ const path = require('path');
 //  app: Manages the app’s lifecycle (startup, close, etc.).
 //  BrowserWindow: Creates the app window (where we load HTML/CSS/JS).
 //  path: Helps with file paths (not used yet but useful later).
+ // Helps you see console.log()
 
-try {
-    require('electron-reloader')(module);
-} catch (err) {
-    console.log("Reloading not supported:", err);
-}
+require('electron-reload')(__dirname, {
+    electron: require(`${__dirname}/node_modules/electron`)
+  });
+  
 
 let mainWindow;
 // global variable mainWindow to store the app window object.
@@ -36,6 +36,7 @@ app.whenReady().then(() => {
 
 
     mainWindow.loadFile('index.html'); // Load frontend
+    mainWindow.webContents.openDevTools();
 });
 
 app.on('window-all-closed', () => {

@@ -4,3 +4,28 @@ Electron is a framework for building desktop applications using JavaScript, HTML
 Electron is an open source project maintained by the OpenJS Foundation and an active community of contributors.
 
 https://www.electronjs.org/docs/latest/tutorial/quick-start
+
+
+
+
+## 🕒 Time-Based Character Image Logic
+
+The app dynamically updates the assistant character based on the current system time. This helps create a more responsive and personalized experience.
+
+### 🧠 How it works
+We use JavaScript's built-in `Date` object to get the current time:
+
+```js
+const now = new Date();
+const hours = now.getHours(); // returns 0–23
+
+
+Based on the hour, the app selects an image using a predefined mapping:
+
+const timeMap = [
+    { range: [1, 6], file: '1am6am.png' },
+    { range: [6, 8], file: '6am8am.png' },
+    // Add other ranges as needed
+    { range: [23, 24], file: '11pm12am.png' },
+    { range: [0, 1], file: '12am1am.png' },
+];
