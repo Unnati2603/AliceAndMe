@@ -1,0 +1,3 @@
+C:/code/AliceAndMe/build/CMakeFiles/AliceAndMe.dir
+C:/code/AliceAndMe/build/CMakeFiles/edit_cache.dir
+C:/code/AliceAndMe/build/CMakeFiles/rebuild_cache.dir
